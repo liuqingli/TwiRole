@@ -1,6 +1,6 @@
 # TwoRole: A Hybrid Model for Role-related User Classification on Twitter
 
-We publish a pre-trained version of TwiRole for role-related user classification on Twitter. The model can automatically crawl a user's profile, profile image and recent tweets, and classify a Twitter user into <span style="color:gray"> 📣 ***Brand*** </span>, <span style="color:salmon"> 👚  ***Female*** </span> or <span style="color:RoyalBlue"> 👔 ***Male***</span>, which is an aid to user-related research on Twitter.
+We publish a pre-trained version of TwiRole for role-related user classification on Twitter. The model can automatically crawl a user's profile, profile image and recent tweets, and classify a Twitter user into 📣 <span style="color: gray"> ***Brand*** </span>, <span style="color:salmon"> 👚  ***Female*** </span> or <span style="color:RoyalBlue"> 👔 ***Male***</span>, which is an aid to user-related research on Twitter.
 
 ## Getting Started
 
