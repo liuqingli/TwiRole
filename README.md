@@ -67,10 +67,10 @@ If you apply our model in a scientific publication, we would appreciate citation
 
 ```
 @misc{Li2018TwiRole,
-	Author = {Liuqing Li, Ziqian Song, Xuan Zhang and Edward A. Fox},
-	Title = {A Hybrid Model for Role-related User Classification on Twitter},
-	Year = {2018},
-	Eprint = {arXiv:1811.10202},
+Author = {Liuqing Li, Ziqian Song, Xuan Zhang and Edward A. Fox},
+Title = {A Hybrid Model for Role-related User Classification on Twitter},
+Year = {2018},
+Eprint = {arXiv:1811.10202},
 }
 ```
 
@@ -78,12 +78,12 @@ Or you can also use the bibtex below to cite this repository:
 
 ```
 @misc{Li2018PreTwiRole,
-	title={Pre-trained TwiRole for User Classification on Twitter},
-	author={Liuqing Li, Ziqian Song, Xuan Zhang and Edward A. Fox},
-	year={2018},
-	publisher={Github},
-	journal={GitHub repository},
-	howpublished={\url{https://github.com/liuqingli/TwiRole}},
+title={Pre-trained TwiRole for User Classification on Twitter},
+author={Liuqing Li, Ziqian Song, Xuan Zhang and Edward A. Fox},
+year={2018},
+publisher={Github},
+journal={GitHub repository},
+howpublished={\url{https://github.com/liuqingli/TwiRole}},
 }
 ``` 
 
