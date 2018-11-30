@@ -91,17 +91,17 @@ howpublished={\url{https://github.com/liuqingli/TwiRole}},
 
 ### Model Architecture
 
-<img src="./doc/architecture.png" alt="alt text" width="50%" height="50%">
+<img src="./doc/architecture.png" alt="alt text" width="66%" height="66%">
 
 ### Evaluation
 
 First, we compare TwiRole with Ferrari et al.'s workd on the same Kaggle dataset, since they also categorized Twitter users into Brand, Female, and Male. The overall accuracy (***Acc = 0.899***) of TwiRole is highter than with Ferrari et al.'s approach (***Acc = 0.865***), and our results are more balanced across   different roles.
 
-![](./doc/eval_1.png)
+<img src="./doc/eval_1.png" alt="alt text" width="66%" height="66%">
 
 Second, we use TwiRole to detect the roles of users in another tweet collection, randomly choose 50 user in each class and manually check their roles by browsing their Twitter pages. The overall accuracy is about 77%.
 
-![](./doc/eval_2.png)
+<img src="./doc/eval_2.png" alt="alt text" width="66%" height="66%">
 
 ## Acknowledgments
 
