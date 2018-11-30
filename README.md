@@ -91,7 +91,7 @@ howpublished={\url{https://github.com/liuqingli/TwiRole}},
 
 ### Model Architecture
 
-![](./doc/architecture.png){:height="50%" width="50%"}
+<img src="./doc/architecture.png" alt="alt text" width="50%" height="50%">
 
 ### Evaluation
 
