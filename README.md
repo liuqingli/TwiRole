@@ -49,7 +49,9 @@ After you have authorized the application please enter the displayed PIN: ***
 
 ## First Classification Task 
 
-TwiRole can detect a single user or multiple users (The screen names of users are stored in a csv file line by line). The output contains the final role and the probability of each role. Further, user files will be stored in "./user" and torch model will be downloaded automatically in the first run. 
+TwiRole can detect a single user or multiple users (The screen names of users should be saved in a CSV file line by line). The output contains the final label and the probability of each role. 
+
+In the first run, torch model will be automatically downloaded. User files will be saved in "./user" 
 
 ### A Single User
 
