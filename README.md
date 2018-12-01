@@ -6,7 +6,7 @@ We publish a pre-trained version of TwiRole for role-related user classification
 
 ### Prerequisites
 
-* Python 2.7
+* Python 2.7 (Anaconda recommended)
 
 ### Installation
 
