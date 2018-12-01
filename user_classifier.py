@@ -121,6 +121,10 @@ def user_info_crawler(screen_name, user_dir, user_profile_f, user_profileimg_f, 
                 # extract user profile image url
                 user_profileimg_url = user_profile_json['profile_image_url']
 
+                if user_profileimg_url:
+                    user_profileimg_url = user_profileimg_url.replace('_normal', '_bigger')
+                    # urllib.urlretrieve(user_profileimg_url, os.path.join(user_dir, user_profileimg_f))
+
                 def image_converter(user_profileimg_url):
                     tmp_file = 'user/tmp' + user_profileimg_url[-4:]
                     urllib.urlretrieve(user_profileimg_url, tmp_file)
@@ -130,11 +134,7 @@ def user_info_crawler(screen_name, user_dir, user_profile_f, user_profileimg_f, 
                     rgb_im.save(os.path.join(user_dir, user_profileimg_f))
                     os.remove(tmp_file)
 
-                if user_profileimg_url:
-                    user_profileimg_url = user_profileimg_url.replace('_normal', '_bigger')
-                    # urllib.urlretrieve(user_profileimg_url, os.path.join(user_dir, user_profileimg_f))
-		    
-            image_converter(user_profileimg_url)
+                image_converter(user_profileimg_url)
 
         # crawl user tweets
         # sys.stdout.write('Get user tweets >> ')
