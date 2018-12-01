@@ -16,11 +16,19 @@ Clone this repo on your local machine
 git clone https://github.com/liuqingli/TwiRole.git
 ```
 
-Install essential libraries (NLTK and Spacy packages need to be downloaded manually later)
+Install essential libraries
 
 ```
 cd TwiRole
 pip install -r requirements.txt
+```
+
+Install two NLTK packages (Run Python 2.7)
+
+```
+>>> import nltk
+>>> nltk.download('stopwords')
+>>> nltk.download('wordnet')
 ```
 
 Set up Twarc API key and secret (Please refer to [Twarc](https://github.com/DocNow/twarc) for more details)
