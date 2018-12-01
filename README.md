@@ -111,7 +111,7 @@ First, we compare TwiRole with Ferrari et al.'s workd on the same Kaggle dataset
 
 Second, we use TwiRole to detect the roles of users in another tweet collection, randomly choose 50 user in each class and manually check the roles of users by browsing their Twitter pages. The overall accuracy is about 77%.
 
-<img src="./doc/eval_2.png" alt="alt text" width="50%" height="50%">
+<img src="./doc/eval_2.png" alt="alt text" width="52%" height="52%">
 
 ## Notes
 
