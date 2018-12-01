@@ -111,6 +111,10 @@ Second, we use TwiRole to detect the roles of users in another tweet collection,
 
 <img src="./doc/eval_2.png" alt="alt text" width="50%" height="50%">
 
+## Notes
+
+TwiRole focuses on a user's rich information for prediction but might not best describe the role of a user. As a result, it can effectively support user-related research at the group level, and individual research is not recommended. 
+
 ## Acknowledgments
 
 * GETAR project supported by the National Science Foundation under Grant No. IIS-1619028
