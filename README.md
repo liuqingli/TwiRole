@@ -113,7 +113,7 @@ Second, we use TwiRole to detect the roles of users in another tweet collection,
 
 ## Notes
 
-TwiRole focuses on a user's rich information for prediction but might not best describe the role of a user. As a result, it can effectively support user-related research at the group level, and individual research is not recommended. 
+TwiRole focuses on a user's rich information for prediction but might not best describe the role of a user. As a result, it can effectively support user-related research at the group level, but individual research is not recommended. 
 
 ## Acknowledgments
 
