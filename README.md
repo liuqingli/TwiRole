@@ -105,7 +105,7 @@ howpublished={\url{https://github.com/liuqingli/TwiRole}},
 
 ### Evaluation
 
-First, we compare TwiRole with Ferrari et al.'s workd on the same Kaggle dataset, since they also categorized Twitter users into Brand, Female, and Male. The overall accuracy (***Acc = 0.899***) of TwiRole is highter than with Ferrari et al.'s approach (***Acc = 0.865***), and our results are more balanced across   different roles.
+First, we compare TwiRole with Ferrari et al.'s workd on the same Kaggle dataset, since they also categorized Twitter users into Brand, Female, and Male. The overall accuracy (***Acc = 0.899***) of TwiRole is higher than with Ferrari et al.'s approach (***Acc = 0.865***), and our results are more balanced across   different roles.
 
 <img src="./doc/eval_1.png" alt="alt text" width="66%" height="66%">
 
