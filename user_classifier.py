@@ -121,10 +121,6 @@ def user_info_crawler(screen_name, user_dir, user_profile_f, user_profileimg_f, 
                 # extract user profile image url
                 user_profileimg_url = user_profile_json['profile_image_url']
 
-                if user_profileimg_url:
-                    user_profileimg_url = user_profileimg_url.replace('_normal', '_bigger')
-                    # urllib.urlretrieve(user_profileimg_url, os.path.join(user_dir, user_profileimg_f))
-
                 def image_converter(user_profileimg_url):
                     tmp_file = 'user/tmp' + user_profileimg_url[-4:]
                     urllib.urlretrieve(user_profileimg_url, tmp_file)
@@ -134,6 +130,10 @@ def user_info_crawler(screen_name, user_dir, user_profile_f, user_profileimg_f, 
                     rgb_im.save(os.path.join(user_dir, user_profileimg_f))
                     os.remove(tmp_file)
 
+                if user_profileimg_url:
+                    user_profileimg_url = user_profileimg_url.replace('_normal', '_bigger')
+                    # urllib.urlretrieve(user_profileimg_url, os.path.join(user_dir, user_profileimg_f))
+		    
                 image_converter(user_profileimg_url)
 
         # crawl user tweets
@@ -163,7 +163,7 @@ def user_info_crawler(screen_name, user_dir, user_profile_f, user_profileimg_f, 
         return user_profile_json
 
     except Exception as e:
-		# print e
+        # print e
     	print "Could not predict user's role. Check account info, few tweets, incorrect image format..."
         # sys.exit(1)
 
@@ -245,6 +245,7 @@ def role_classifier(screen_name):
 
         net = ResNet18()
         net.load_state_dict(torch.load('model/classifier_3.pkl'))
+        net.eval()
 
         transform = transforms.Compose([
             transforms.Scale(224),
@@ -257,10 +258,19 @@ def role_classifier(screen_name):
             image = Image.open(image_name)
             image = transform(image).float()
             image = Variable(image)
-            iamge = image.unsqueeze_(0)
+            image = image.unsqueeze_(0)
             return image
 
+        def softmax(x):
+            """Compute softmax values for each sets of scores in x."""
+            return np.exp(x) / np.sum(np.exp(x), axis=0)
+
         classifier_3_predict = net(image_loader(os.path.join(user_dir, user_profileimg_f))).data.cpu().numpy().tolist()
+
+        # print
+        # print classifier_1_predict[0]
+        # print classifier_2_predict[0]
+        # print softmax(classifier_3_predict[0])
 
         # ============================================
         # hybrid model prediction
@@ -269,7 +279,7 @@ def role_classifier(screen_name):
         # sys.stdout.write('Hybrid Classifier \n')
         # sys.stdout.flush()
 
-        hybrid_testing = np.concatenate((classifier_1_predict[0], classifier_2_predict[0], classifier_3_predict[0]))
+        hybrid_testing = np.concatenate((classifier_1_predict[0], classifier_2_predict[0], softmax(classifier_3_predict[0])))
 
         classifier_hybrid = pickle.load(open('model/classifier_hybrid.pkl', 'r'))
         output = classifier_hybrid.predict_proba([hybrid_testing]) * 100.0
@@ -286,8 +296,8 @@ def role_classifier(screen_name):
         return label_list[np.argmax(output[0])]
 
     except Exception as e:
-		# print e
-    	print "Could not predict user's role. Check account info, few tweets, incorrect image format..."
+        # print e
+        print "Could not predict user's role. Check account info, few tweets, incorrect image format..."
         # sys.exit(1)
 
 
