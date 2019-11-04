@@ -41,8 +41,8 @@ python user_classifier.py -u [screen_name]
 Example:
 
 ```
-python user_classifier.py -u BBC
-Task 1: BBC  =>  Brand   [Male: 20.0%, Female: 9.5%, Brand: 70.5%]
+python user_classifier.py -u CNN
+Task 1: CNN  =>  Brand   [Brand: 100.00%, Female: 0.00%, Male: 0.00%]
 ```
 
 ### Multiple Users
