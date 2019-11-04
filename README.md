@@ -6,7 +6,7 @@ We publish a pre-trained version of TwiRole for role-related user classification
 
 ### Prerequisites
 
-* Python 2.7 (Anaconda recommended)
+* Python 2 or Python 3 (Anaconda recommended)
 
 ### Installation
 
@@ -23,35 +23,15 @@ cd TwiRole
 pip install -r requirements.txt
 ```
 
-Install two NLTK packages (Run Python 2.7)
+Create or use your Twitter account and request your Twitter credentials from the [Twitter Developer website](https://developer.twitter.com/en/apps).
 
-```
->>> import nltk
->>> nltk.download('stopwords')
->>> nltk.download('wordnet')
-```
-
-Set up Twarc API key and secret (Please refer to [Twarc](https://github.com/DocNow/twarc) for more details)
-
-```
-twarc configure
-```
-
-```
-consumer key: ***
-consumer secret: ***
-
-Please log into Twitter and visit this URL in your browser: https://api.twitter.com/oauth/authorize?oauth_token=***
-After you have authorized the application please enter the displayed PIN: ***
-
-✨ ✨ ✨  Happy twarcing! ✨ ✨ ✨
-```
+Replace the placehoders in user_classifier.py with your Twitter credentials.
 
 ## First Classification Task 
 
 TwiRole can detect a single user or multiple users (The screen names of users should be saved in a CSV file line by line). The output contains the final label and the probability of each role. 
 
-In the first run, torch model will be automatically downloaded. User files will be saved in "./user" 
+In the first run, nltk and torch model will be automatically downloaded. User files will be saved in "../data/user" 
 
 ### A Single User
 
