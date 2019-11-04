@@ -319,15 +319,15 @@ def role_classifier(screen_name):
         print(colored('%-6s\t' % label_list[np.argmax(output[0])], color), end='')
         print(colored('[Brand: %.2f%%, Female: %.2f%%, Male: %.2f%%]' % (output[0][0], output[0][1], output[0][2]), color))
 
-        output_1 = classifier_1_predict[0] * 100.0
-        print('Classifier_1: \t', end='')
-        print('[Brand: %.2f%%, Female: %.2f%%, Male: %.2f%%]' % (output_1[0], output_1[1], output_1[2]))
-        output_2 = classifier_2_predict[0] * 100.0
-        print('Classifier_2: \t', end='')
-        print('[Brand: %.2f%%, Female: %.2f%%, Male: %.2f%%]' % (output_2[0], output_2[1], output_2[2]))
-        output_3 = softmax(classifier_3_predict[0]) * 100.0
-        print('Classifier_3: \t', end='')
-        print('[Brand: %.2f%%, Female: %.2f%%, Male: %.2f%%]' % (output_3[0], output_3[1], output_3[2]))
+        # output_1 = classifier_1_predict[0] * 100.0
+        # print('Classifier_1: \t', end='')
+        # print('[Brand: %.2f%%, Female: %.2f%%, Male: %.2f%%]' % (output_1[0], output_1[1], output_1[2]))
+        # output_2 = classifier_2_predict[0] * 100.0
+        # print('Classifier_2: \t', end='')
+        # print('[Brand: %.2f%%, Female: %.2f%%, Male: %.2f%%]' % (output_2[0], output_2[1], output_2[2]))
+        # output_3 = softmax(classifier_3_predict[0]) * 100.0
+        # print('Classifier_3: \t', end='')
+        # print('[Brand: %.2f%%, Female: %.2f%%, Male: %.2f%%]' % (output_3[0], output_3[1], output_3[2]))
 
         return label_list[np.argmax(output[0])]
 
