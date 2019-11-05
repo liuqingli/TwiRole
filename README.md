@@ -2,7 +2,7 @@
 
 We publish a pre-trained version of TwiRole for role-related user classification on Twitter. The model can automatically crawl a user's profile, profile image and recent tweets, and classify a Twitter user into 📣 ***Brand***, 👚 ***Female*** or  👔 ***Male***, which is an aid to user-related research on Twitter. If TwiRole is helpful for your study or research, please ⭐ it!
 
-![](./doc/demo.gif)
+![](./doc/animation.gif)
 
 ## Getting Started
 
