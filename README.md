@@ -4,7 +4,8 @@ We publish a pre-trained version of TwiRole for role-related user classification
 
 Here is a live demo and a [CodeOcean Capsule](https://codeocean.com/capsule/9584745/) for reproducibility.
 
-![demo](./doc/demo.gif){:height="100%" width="100%"}
+<img src="./doc/demo.gif" alt="alt text" width="100%" height="100%">
+
 
 
 ## Getting Started
