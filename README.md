@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 TwiRole can detect a single user or multiple users (The screen names of users should be saved in a CSV file line by line). The output contains the final label and the probability of each role. 
 
-In the first run, nltk and torch model will be automatically downloaded. User files will be saved in "../data/user" 
+In the first run, some nltk libraries will be automatically downloaded and installed. User files will be saved in the [user](data/user) folder. 
 
 ### A Single User
 
