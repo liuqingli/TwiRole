@@ -4,7 +4,8 @@ We publish a pre-trained version of TwiRole for role-related user classification
 
 Here is a live demo and a [CodeOcean Capsule](https://codeocean.com/capsule/9584745/) for reproducibility.
 
-![image](./doc/demo.gif)
+![demo](./doc/demo.gif){:height="100%" width="100%"}
+
 
 ## Getting Started
 
