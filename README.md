@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 Create or use your Twitter account and request your Twitter credentials from the [Twitter Developer website](https://developer.twitter.com/en/apps).
 
-Replace the placeholders in [code/user_classifier.py](code/user_classifier.py) with your Twitter credentials.
+Replace the placeholders (line 52-55) in [code/user_classifier.py](code/user_classifier.py) with your Twitter credentials.
 
 ## First Classification Task 
 
