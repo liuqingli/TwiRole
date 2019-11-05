@@ -14,7 +14,7 @@ Here is a live demo and a [CodeOcean Capsule](https://codeocean.com/capsule/9584
 
 * Python 2 or Python 3 (Anaconda recommended)
 
-### Installation
+### Installation and Configuration
 
 Clone this repo on your local machine
 
