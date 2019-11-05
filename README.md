@@ -99,7 +99,7 @@ Second, we use TwiRole to detect the roles of users in the real Twitter world co
 
 **Role** | Brand | Female | Male
 :---: | :---: | :---: | :---:
-**Precision** | 0.84 | 0.86 | 0.81
+**Precision** | *0.84* | *0.86* | *0.81*
 
 ## Notes
 
