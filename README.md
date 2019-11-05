@@ -98,6 +98,7 @@ First, we compare TwiRole with Ferrari et al.'s workd on the same Kaggle dataset
 Second, we use TwiRole to detect the roles of users in the real Twitter world collection, randomly choose 100 predicted users in each class and manually check their roles by browsing their Twitter pages. The precision of TwiRole is:
 
 **Role** | Brand | Female | Male
+--- | --- | --- | ---
 **Precision** | 0.84 | 0.86 | 0.81
 
 ## Notes
