@@ -20,6 +20,9 @@ if sys.version_info[0] == 2:
 elif sys.version_info[0] == 3:
     from urllib.request import urlretrieve
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 # NLTK
 import nltk
 import string
