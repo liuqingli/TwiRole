@@ -4,6 +4,11 @@ We publish a pre-trained version of TwiRole for role-related user classification
 
 ![image](./doc/demo.gif)
 
+<dl>
+  <blockquote class="embedly-card"><h4><a href="https://codeocean.com/capsule/9584745/tree/v4">Code Ocean | Discover & Run Scientific Code</a></h4><p>Code Ocean is a cloud-based executable research platform. Discover, run and share scientific code.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+</dl>
+
 ## Getting Started
 
 ### Prerequisites
