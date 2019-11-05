@@ -16,22 +16,22 @@ Here is a live demo and a [CodeOcean Capsule](https://codeocean.com/capsule/9584
 
 ### Installation and Configuration
 
-Clone this repo on your local machine
+* Clone this repo on your local machine
 
 ```
 git clone https://github.com/liuqingli/TwiRole.git
 ```
 
-Install essential libraries
+* Install essential libraries
 
 ```
 cd TwiRole
 pip install -r requirements.txt
 ```
 
-Create or use your Twitter account and request your Twitter credentials from the [Twitter Developer website](https://developer.twitter.com/en/apps).
+* Create or use your Twitter account and request your Twitter credentials from the [Twitter Developer website](https://developer.twitter.com/en/apps).
 
-Replace the placeholders (line 52-55) in [code/user_classifier.py](code/user_classifier.py) with your Twitter credentials.
+* Replace the placeholders (line 52-55) in [code/user_classifier.py](code/user_classifier.py) with your Twitter credentials.
 
 ## First Classification Task 
 
