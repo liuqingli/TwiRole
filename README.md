@@ -103,7 +103,7 @@ Second, we evaluated TwiRole in the real Twitter environment. We applied TwiRole
 
 ## Notes
 
-TwiRole focuses on a user's rich information for prediction but might not best describe the role of a user. As a result, it can effectively support user-related research at the group level, but individual research is not recommended. 
+TwiRole focuses on users' rich information during prediction but might not best describe the role of a user. As a result, it can effectively support role-related research at the group level, but research on specific users is not recommended. 
 
 ## Acknowledgments
 
