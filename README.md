@@ -95,7 +95,7 @@ First, we compare TwiRole with Ferrari et al.'s work on the same Kaggle dataset,
 
 <img src="./doc/eval_1.png" alt="alt text" width="66%" height="66%">
 
-Second, we evaluated TwiRole in the real Twitter environment. We applied TwiRole to detect a set of Twitter users, randomly chose 100 predicted users in each class, and manually check their roles by browsing their Twitter pages. The precision results of TwiRole are shown below:
+Second, we evaluated TwiRole in the real Twitter environment by applying it to detect a set of Twitter users extracted from event-related tweet collections (e.g., hurricanes, earthquakes, and shootings). We randomly chose 100 predicted users in each class, and manually checked their roles by browsing their Twitter pages. The precision results of TwiRole are shown below:
 
 **Role** | Brand | Female | Male
 :---: | :---: | :---: | :---:
