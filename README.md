@@ -6,7 +6,7 @@ Here is a live demo and we also provide a [CodeOcean Capsule](https://codeocean.
 
 <img src="./doc/light_demo.gif" alt="alt text" width="100%" height="100%">
 
-<p align="center"><img width="50%" src="./doc/legend.jpg"></p>
+<p align="center"><img width="60%" src="./doc/legend.jpg"></p>
 
 ## Getting Started
 
