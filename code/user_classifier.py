@@ -17,11 +17,12 @@ from twarc import Twarc
 from termcolor import colored
 if sys.version_info[0] == 2:
     import urllib
+    reload(sys)
+    sys.setdefaultencoding('utf-8')
 elif sys.version_info[0] == 3:
+    from importlib import reload
+    reload(sys)
     from urllib.request import urlretrieve
-
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 # NLTK
 import nltk
